@@ -11,3 +11,82 @@
     --bg:#dfdb8b;
     --title: #de6c4c;
 }
+
+.container {
+    width: 90%;
+    max-width:1200px;
+    margin: auto;
+}
+
+/* /////////////////////// navbar ///////////////////// */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 21px;
+    background-color: var(--bg);
+    
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    
+}
+
+li a {
+    color: var(--title);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* /////////////////////Myself ///////////////// */
+
+.myself {
+    background-color: var(--bgtext);
+}
+
+.contents {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.ct-lf img,
+.ct-rg img{
+    width:250px;
+    height:auto;
+}
+
+.ct-lf img{
+
+}
+
+.ct-center {
+    text-align: center;
+    margin: 20px;
+    align-self:start;
+}
+.ct-text{
+}
+
+.ct-text h1{
+    font-size: 60px;
+    color: var(--textcolor);
+}
+
+.ct-text p{
+    color: var(--textcolor);
+    margin-bottom: 20px;
+}
+
+.ct-text a{
+    padding: 8px 16px;
+    color: var(--bg);
+    border-radius:30px ;
+    background-color:var(--title);
+}
+
