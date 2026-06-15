@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:fantasy;
+}
+
+:root{
+    --textcolor:#5a7bd2;
+    --bgtext:#fffdd4;
+    --bg:#dfdb8b;
+    --title: #de6c4c;
+}
