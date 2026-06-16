@@ -16,6 +16,7 @@
     width: 90%;
     max-width:1200px;
     margin: auto;
+    overflow: hidden;
 }
 
 /* /////////////////////// navbar ///////////////////// */
@@ -87,6 +88,52 @@ a {
     padding: 8px 16px;
     color: var(--bg);
     border-radius:30px ;
-    background-color:var(--title);
+    background-color:var(--bgtext);
+}
+
+/* ///////////////// memory //////////////////// */
+
+.memory {
+    background-color: var(--textcolor);
+    padding: 30px 0;
+}
+
+.mmr-text h1{
+    font-size: 50px;
+    color: var(--bgtext);
+
+
+}
+
+.mmr-cards {
+    display: flex;
+    width:max-content;
+    animation: scroll 40s linear infinite ;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-90%);
+    }
+}
+.card img{
+    width: 400px;
+    height: 300px;
+    object-fit:cover;
+}
+
+/* /////////////// contact /////////////// */
+
+.contact {
+    background-color: var(--title);
+}
+
+.contact h1 {
+    color: var(--bgtext);
+    font-size: 50px;
 }
 
