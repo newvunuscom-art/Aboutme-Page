@@ -102,7 +102,7 @@ a {
     text-align:center;
     font-size: 50px;
     color: var(--bgtext);
-
+    padding: 20px;
 
 }
 
@@ -137,10 +137,11 @@ a {
     text-align: center;
     color: var(--bgtext);
     font-size: 50px;
+    padding:0px;
 }
 
 .contact {
-    padding: 20px 50px;
+    padding:50px;
     width:100%;
 
 }
@@ -151,13 +152,14 @@ a {
     font-size: 100px;
     text-align: center;
     gap:5px;
+    padding: 20px;
 
 }
 
 .social a{
-    color:white;
-    padding:0 10px;
+    color:black;
     background-color: var(--bg);
     border-radius:30px;
     max-width:100vh;
 }
+
