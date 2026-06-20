@@ -12,6 +12,14 @@
     --title: #de6c4c;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    
+}
+
 .container {
     width: 90%;
     max-width:1200px;
@@ -42,6 +50,10 @@ li a {
 
 a {
     text-decoration: none;
+}
+
+.menu a:hover{
+    color: var(--bgtext);
 }
 
 /* /////////////////////Myself ///////////////// */
@@ -91,18 +103,20 @@ a {
     background-color:var(--title);
 }
 
+.ct-text a:hover{
+    color: var(--bgtext);
+}
 /* ///////////////// memory //////////////////// */
 
 .memory {
     background-color: var(--textcolor);
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .mmr-text h1{
     text-align:center;
     font-size: 50px;
     color: var(--bgtext);
-    padding: 20px;
 
 }
 
@@ -111,6 +125,11 @@ a {
     width:max-content;
     animation: scroll 40s linear infinite ;
     flex-shrink: 0;
+    padding: 20px;
+}
+
+.mmr-cards img {
+    border-radius: 20px;
 }
 
 @keyframes scroll {
@@ -125,6 +144,10 @@ a {
     width: 400px;
     height: 300px;
     object-fit:cover;
+}
+
+.mmr-cards img:hover{
+    
 }
 
 /* /////////////// contact /////////////// */
@@ -163,3 +186,34 @@ a {
     max-width:100vh;
 }
 
+/* /////////////// Aboutme //////////////////////// */
+
+.aboutme h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    color: var(--textcolor);
+}
+
+.abm-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items:center;
+}
+
+.abm-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 70px;
+    margin-bottom:20px ;
+}
+
+.abm-text {
+    align-items: center;
+    text-align:center;
+}
+
+.abm-text p {
+    margin-bottom: 20px;
+    color: var(--textcolor);
+}
