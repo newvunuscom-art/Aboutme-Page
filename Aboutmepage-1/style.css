@@ -39,7 +39,7 @@ html{
     .menu{
         position:absolute;
 
-        top:70px;
+        top:50px;
         left:0;
 
         width:100%;
@@ -144,6 +144,9 @@ html{
         gap:10px;
     }
 
+    .myself {
+    }
+
     .ct-text h1{
         font-size:32px;
     }
@@ -154,7 +157,7 @@ html{
 
     .ct-lf img,
     .ct-rg img{
-        width:150px;
+        display: none;
     }
 
     .card img{
