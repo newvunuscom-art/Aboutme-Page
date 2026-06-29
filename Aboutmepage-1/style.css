@@ -16,6 +16,10 @@ html{
     scroll-behavior: smooth;
 }
 
+section {
+    width: 100%;
+    height: 580px;
+}
 
 
 .container {
@@ -145,19 +149,23 @@ html{
     }
 
     .myself {
+
     }
 
     .ct-text h1{
-        font-size:32px;
+        font-size:18px;
     }
 
     .ct-text p{
-        font-size:14px;
+        font-size:12px;
     }
 
-    .ct-lf img,
+
+    .ct-lf img {
+        width: 50px;
+    }
     .ct-rg img{
-        display: none;
+        width: 50px;
     }
 
     .card img{
@@ -328,6 +336,11 @@ a {
 
 /* /////////////// contact /////////////// */
 
+section#contact {
+    width: 100%;
+    height:auto;
+}
+
 .contact {
     background-color: var(--title);
 }
@@ -370,6 +383,11 @@ a {
 }
 
 /* /////////////// Aboutme //////////////////////// */
+
+section#aboutme {
+    width: 100%;
+    height: auto;
+}
 
 .aboutme h1{
     text-align: center;
