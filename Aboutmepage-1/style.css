@@ -26,161 +26,33 @@ html{
 }
 
 /* ///////////////////////responsive /////////////////// */
-@media (max-width:768px){
-
-    .navbar{
-        justify-content:space-between;
-    }
-
-    .hamburger{
-        display:block;
-    }
-
-    .menu{
-        position:absolute;
-
-        top:50px;
-        left:0;
-
-        width:100%;
-
-        background:var(--bg);
-
-        flex-direction:column;
-        text-align:center;
-
-        padding:20px;
-
-        display:none;
-    }
-
-    .menu.active{
-        display:flex;
-    }
-
-    .contents{
-        grid-template-columns:1fr;
-        gap:30px;
-    }
-
-    .social{
-        grid-template-columns:repeat(2,1fr);
-        font-size:60px;
-    }
-
-    .card img{
-        width:280px;
-        height:200px;
-    }
-
-    .abm-img{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-}   
-/* TABLET */
-
-@media (max-width: 768px){
-    
-    .menu{
-        gap:15px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .contents{
-        grid-template-columns:1fr;
-        gap:30px;
-        padding:30px 0;
-    }
-
-    .ct-lf img,
-    .ct-rg img{
-        width:200px;
-    }
-
-    .ct-text h1{
-        font-size:40px;
-    }
-
-    .social{
-        grid-template-columns:repeat(2,1fr);
-        font-size:60px;
-    }
-
-    .card img{
-        width:300px;
-        height:220px;
-    }
-
-    .abm-img{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-
-    .abm-card img{
-        width:150px;
-    }
-
-}
-
+  
 /* MOBILE*/
 
 @media (max-width: 480px){
+
+    .menu.active {
+        display: flex;
+    }
     .hamburger{
         display: block;
     }
-    .navbar{
-        padding:15px;
-    }
-
+    
+    
     .menu{
-        flex-direction:column;
-        align-items:center;
-        gap:10px;
-    }
-
-    .myself {
-    }
-
-    .ct-text h1{
-        font-size:32px;
-    }
-
-    .ct-text p{
-        font-size:14px;
-    }
-
-    .ct-lf img,
-    .ct-rg img{
+        
         display: none;
-    }
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
 
-    .card img{
-        width:220px;
-        height:160px;
-    }
+        background-color: var(--bg);
+        flex-direction:column; 
+        text-align: center;
 
-    .social{
-        grid-template-columns:1fr;
-        font-size:50px;
+        padding: 20px 0 ;
     }
-
-    .contact h1,
-    .aboutme h1,
-    .mmr-text h1{
-        font-size:36px;
-    }
-
-    .abm-card img{
-        width:120px;
-        border-radius:30px;
-    }
-
 }
 
 /* /////////////////////// navbar ///////////////////// */
@@ -188,6 +60,7 @@ html{
     display: flex;
     align-items: center;
     justify-content:center;
+    justify-content:space-between;
     padding: 21px;
     background-color: var(--bg);
     
@@ -220,7 +93,7 @@ a {
 }
 
 .hamburger{
-    display:none;
+    display:inline-block;
     font-size:30px;
     cursor:pointer;
     color:var(--title);
