@@ -4,7 +4,7 @@ const icon = document.querySelector(".hamburger i");
 const links = document.querySelectorAll(".menu a");
 
 hamburger.addEventListener("click", () => {
-
+    
     menu.classList.toggle("active");
 
     if(menu.classList.contains("active")){
