@@ -16,10 +16,6 @@ html{
     scroll-behavior: smooth;
 }
 
-section {
-    width: 100%;
-    height: 580px;
-}
 
 
 .container {
@@ -30,165 +26,55 @@ section {
 }
 
 /* ///////////////////////responsive /////////////////// */
-@media (max-width:768px){
-
-    .navbar{
-        justify-content:space-between;
-    }
-
-    .hamburger{
-        display:block;
-    }
-
-    .menu{
-        position:absolute;
-
-        top:50px;
-        left:0;
-
-        width:100%;
-
-        background:var(--bg);
-
-        flex-direction:column;
-        text-align:center;
-
-        padding:20px;
-
-        display:none;
-    }
-
-    .menu.active{
-        display:flex;
-    }
-
-    .contents{
-        grid-template-columns:1fr;
-        gap:30px;
-    }
-
-    .social{
-        grid-template-columns:repeat(2,1fr);
-        font-size:60px;
-    }
-
-    .card img{
-        width:280px;
-        height:200px;
-    }
-
-    .abm-img{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-}   
-/* TABLET */
-
-@media (max-width: 768px){
-    
-    .menu{
-        gap:15px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .contents{
-        grid-template-columns:1fr;
-        gap:30px;
-        padding:30px 0;
-    }
-
-    .ct-lf img,
-    .ct-rg img{
-        width:200px;
-    }
-
-    .ct-text h1{
-        font-size:40px;
-    }
-
-    .social{
-        grid-template-columns:repeat(2,1fr);
-        font-size:60px;
-    }
-
-    .card img{
-        width:300px;
-        height:220px;
-    }
-
-    .abm-img{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-
-    .abm-card img{
-        width:150px;
-    }
-
-}
-
+  
 /* MOBILE*/
 
 @media (max-width: 480px){
-    .hamburger{
-        display: block;
+
+    .menu.active {
+        display: flex !important;
     }
-    .navbar{
-        padding:15px;
+    .hamburger{
+        display: block !important;
+    }
+    
+    
+    .menu{
+        
+        display: none !important; 
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+
+        background-color: var(--bg);
+        flex-direction:column; 
+        text-align: center;
+
+        padding: 20px 0 ;
+    }
+}
+
+@media (max-width:768px){
+    .hamburger{
+        display:block !important;
     }
 
     .menu{
+        display:none !important;
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:var(--bg);
         flex-direction:column;
-        align-items:center;
-        gap:10px;
+        text-align:center;
+        padding:20px 0;
     }
 
-    .myself {
-
+    .menu.active{
+        display:flex !important;
     }
-
-    .ct-text h1{
-        font-size:18px;
-    }
-
-    .ct-text p{
-        font-size:12px;
-    }
-
-
-    .ct-lf img {
-        width: 50px;
-    }
-    .ct-rg img{
-        width: 50px;
-    }
-
-    .card img{
-        width:220px;
-        height:160px;
-    }
-
-    .social{
-        grid-template-columns:1fr;
-        font-size:50px;
-    }
-
-    .contact h1,
-    .aboutme h1,
-    .mmr-text h1{
-        font-size:36px;
-    }
-
-    .abm-card img{
-        width:120px;
-        border-radius:30px;
-    }
-
 }
 
 /* /////////////////////// navbar ///////////////////// */
@@ -196,6 +82,7 @@ section {
     display: flex;
     align-items: center;
     justify-content:center;
+    justify-content:space-between;
     padding: 21px;
     background-color: var(--bg);
     
@@ -336,11 +223,6 @@ a {
 
 /* /////////////// contact /////////////// */
 
-section#contact {
-    width: 100%;
-    height:auto;
-}
-
 .contact {
     background-color: var(--title);
 }
@@ -383,11 +265,6 @@ section#contact {
 }
 
 /* /////////////// Aboutme //////////////////////// */
-
-section#aboutme {
-    width: 100%;
-    height: auto;
-}
 
 .aboutme h1{
     text-align: center;
